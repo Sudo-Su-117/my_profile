@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy"
         content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; connect-src * 'unsafe-inline' http://localhost:3000 ws://localhost:3000;">
-    <title>Manav Varia | AI Automation & MERN Stack Engineer</title>
-    <link rel="icon" type="image/png" href="images/7545d29a-998b-4aeb-ae2b-8ca87de54bdc.png">
+    <title>Manav Varia | Portfolio </title>
     <meta name="description"
         content="I build AI-powered systems that automate work and scale products. MERN Stack, GenAI, and Automation Specialist delivering measurable ROI.">
     <meta name="keywords"
@@ -15,12 +14,13 @@
     <meta property="og:title" content="Manav Varia - AI Automation & MERN Stack Engineer">
     <meta property="og:description"
         content="Building AI-powered systems that save time and scale revenue. View my production-ready projects.">
-    <meta property="og:image" content="images/7545d29a-998b-4aeb-ae2b-8ca87de54bdc.png">
+    <meta property="og:image" content="https://manavvaria.com/og-image.jpg">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1200x630/0f172a/ffffff?text=Manav+Varia+Portfolio">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <title>Manav Varia - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
@@ -667,6 +667,16 @@
                 </button>
             </div>
         </div>
+
+        <!-- Journey Line SVG (Fixed Sidebar) -->
+        <svg id="journey-svg"
+            class="fixed left-0 top-16 w-full h-[calc(100vh-4rem)] pointer-events-none z-0 hidden md:block"
+            style="opacity: 0.4;">
+            <path id="journey-line" d="" fill="none" stroke="currentColor" stroke-width="2"
+                class="text-slate-300 dark:text-slate-700" stroke-dasharray="0 1" />
+        </svg>
+
+
     </nav>
     <!-- Mobile Menu -->
     <div id="mobile-menu"
@@ -681,7 +691,9 @@
         <a href="#contact"
             class="block py-3 px-6 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Contact</a>
     </div>
-    </div>
+    <div id="scroll-progress"
+        class="absolute bottom-0 left-0 w-0 bg-gradient-to-r from-teal-400 via-cyan-400 to-purple-500"></div>
+    </header>
 
     <main class="flex-grow pt-16">
         <section class="relative min-h-screen flex items-center overflow-hidden bg-transparent pt-28 md:pt-0">
@@ -708,8 +720,7 @@
                         I build <span
                             class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-500">AI-powered
                             systems</span><br>
-                        that <span id="typewriter-text" class="inline-block min-w-[200px]"></span><span
-                            id="typewriter-cursor" class="text-teal-400 animate-pulse">|</span>
+                        that automate work.
                     </h1>
                     <p class="mt-4 text-xl text-slate-700 dark:text-slate-300">
                         Full-Stack Developer & AI Automation Specialist
@@ -732,76 +743,68 @@
                         </a>
                     </div>
 
-                    <!-- Stats (moved above socials for visibility) -->
-                    <div id="stats-section"
-                        class="mt-10 grid grid-cols-4 gap-4 border-t border-slate-200 dark:border-white/10 pt-8">
-                        <div class="text-center">
-                            <p class="stat-number text-3xl font-bold text-slate-900 dark:text-white" data-target="15">0
-                            </p>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">Projects
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <p class="stat-number text-3xl font-bold text-slate-900 dark:text-white" data-target="6">0
-                            </p>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">Tech
-                                Stacks</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="stat-number text-3xl font-bold text-slate-900 dark:text-white" data-target="3">0
-                            </p>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">Clients
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <p class="stat-number text-3xl font-bold text-slate-900 dark:text-white" data-target="500">0
-                            </p>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">Commits
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="mt-6 flex items-center gap-3">
+                    <!-- Social Links (Restored) -->
+                    <div class="mt-8 flex items-center gap-4">
                         <a href="https://github.com/ManavVaria117" target="_blank" rel="noopener noreferrer"
                             aria-label="GitHub Profile"
-                            class="magnetic-btn group p-2.5 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-white/10 transition-all border border-slate-200 dark:border-white/5">
-                            <svg class="w-5 h-5 group-hover:scale-110 transition-transform fill-current"
-                                viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
-                                </path>
-                            </svg>
+                            class="magnetic-btn group p-3 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-white/10 transition-all border border-slate-200 dark:border-white/5">
+                            <i data-lucide="github" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/manav-varia/" target="_blank" rel="noopener noreferrer"
                             aria-label="LinkedIn Profile"
-                            class="magnetic-btn group p-2.5 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all border border-slate-200 dark:border-white/5">
-                            <svg class="w-5 h-5 group-hover:scale-110 transition-transform fill-current"
-                                viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
+                            class="magnetic-btn group p-3 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all border border-slate-200 dark:border-white/5">
+                            <i data-lucide="linkedin" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                         </a>
+                        <!-- Fiverr -->
                         <a href="https://www.fiverr.com/manav_varia" target="_blank" rel="noopener noreferrer"
                             aria-label="Hire me on Fiverr"
-                            class="magnetic-btn group p-2.5 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-[#1DBF73] dark:hover:text-[#1DBF73] hover:bg-green-50 dark:hover:bg-green-900/20 transition-all border border-slate-200 dark:border-white/5">
+                            class="magnetic-btn group p-3 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-[#1DBF73] dark:hover:text-[#1DBF73] hover:bg-green-50 dark:hover:bg-green-900/20 transition-all border border-slate-200 dark:border-white/5">
                             <img src="https://cdn.simpleicons.org/fiverr/1DBF73"
-                                class="w-4 h-4 group-hover:scale-110 transition-transform" alt="Fiverr">
+                                class="w-5 h-5 group-hover:scale-110 transition-transform dark:invert-0" alt="Fiverr">
                         </a>
                         <a href="mailto:variamanav117@gmail.com" aria-label="Email Me"
-                            class="magnetic-btn group p-2.5 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 transition-all border border-slate-200 dark:border-white/5">
-                            <i data-lucide="mail" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
+                            class="magnetic-btn group p-3 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 transition-all border border-slate-200 dark:border-white/5">
+                            <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                         </a>
+
+                        <!-- LeetCode -->
+                        <a href="https://leetcode.com/ManavVaria117/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LeetCode Profile"
+                            class="magnetic-btn group p-3 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20 transition-all border border-slate-200 dark:border-white/5">
+                            <img src="https://cdn.simpleicons.org/leetcode/FFA116"
+                                class="w-5 h-5 group-hover:scale-110 transition-transform grayscale group-hover:grayscale-0"
+                                alt="LeetCode">
+                        </a>
+
+                        <!-- WhatsApp (Extra) -->
                         <a href="https://wa.me/916351171448" target="_blank" rel="noopener noreferrer"
                             aria-label="Chat on WhatsApp"
-                            class="magnetic-btn group p-2.5 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/20 transition-all border border-slate-200 dark:border-white/5">
+                            class="magnetic-btn group p-3 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/20 transition-all border border-slate-200 dark:border-white/5">
                             <i data-lucide="message-circle"
-                                class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
+                                class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                         </a>
+
+                        <!-- Phone -->
                         <a href="tel:+916351171448" aria-label="Call Me"
-                            class="magnetic-btn group p-2.5 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all border border-slate-200 dark:border-white/5">
-                            <i data-lucide="phone" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
+                            class="magnetic-btn group p-3 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all border border-slate-200 dark:border-white/5">
+                            <i data-lucide="phone" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                         </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="mt-12 grid grid-cols-3 gap-6 border-t border-slate-200 dark:border-white/10 pt-8">
+                        <div>
+                            <p class="text-3xl font-bold text-slate-900 dark:text-white">15+</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Projects</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-slate-900 dark:text-white">6+</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Tech Stacks</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-slate-900 dark:text-white">3+</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Clients</p>
+                        </div>
                     </div>
                 </div>
 
@@ -817,165 +820,46 @@
         <!-- Target doesn't seem to have explicit divider lines like the user had, so removing for fidelity -->
 
 
-        <!-- About Me — Bento Grid -->
+        <!-- About Me -->
         <section id="about" class="py-20 bg-transparent scroll-mt-24">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center text-slate-900 dark:text-white mb-4">About Me</h2>
-                <p class="text-center text-slate-500 dark:text-slate-400 mb-12 max-w-xl mx-auto">Developer, automation
-                    nerd, and builder of things that actually work.</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto" id="bento-grid">
-                    <!-- Big intro card (spans 2 cols) -->
-                    <div
-                        class="col-span-2 row-span-2 rounded-2xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200 dark:border-white/10 p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                        <div>
-                            <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
-                                Hey, I'm <strong class="text-slate-900 dark:text-white">Manav</strong> — a full-stack
-                                developer and AI automation specialist based in India.
-                                I love turning messy, manual processes into clean automated systems that actually save
-                                people time and money.
-                            </p>
-                            <p class="text-teal-600 dark:text-teal-400 font-medium">
-                                I bridge the gap between complex AI research and production-grade applications.
-                            </p>
-                        </div>
-                        <p class="mt-4 text-sm text-slate-500 dark:text-slate-400">My focus isn't just writing code —
-                            it's building <strong class="text-slate-700 dark:text-slate-200">assets</strong> that
-                            generate revenue and solve real business problems.</p>
-                    </div>
-
-                    <!-- Stat card: Projects -->
-                    <div
-                        class="rounded-2xl bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 backdrop-blur-md border border-teal-200/50 dark:border-teal-500/20 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <i data-lucide="code-2" class="w-8 h-8 text-teal-500 mb-2"></i>
-                        <p class="text-3xl font-bold text-slate-900 dark:text-white">15+</p>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-1">Projects
-                            Shipped</p>
-                    </div>
-
-                    <!-- Stat card: Automation -->
-                    <div
-                        class="rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 backdrop-blur-md border border-purple-200/50 dark:border-purple-500/20 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <i data-lucide="zap" class="w-8 h-8 text-purple-500 mb-2"></i>
-                        <p class="text-3xl font-bold text-slate-900 dark:text-white">60%</p>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-1">Workflow
-                            Reduction</p>
-                    </div>
-
-                    <!-- Location card -->
-                    <div
-                        class="rounded-2xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200 dark:border-white/10 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <i data-lucide="map-pin" class="w-8 h-8 text-rose-400 mb-2"></i>
-                        <p class="text-sm font-semibold text-slate-900 dark:text-white">India 🇮🇳</p>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Open to Remote</p>
-                    </div>
-
-                    <!-- Currently learning card -->
-                    <div
-                        class="rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 backdrop-blur-md border border-blue-200/50 dark:border-blue-500/20 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <i data-lucide="brain" class="w-8 h-8 text-blue-500 mb-2"></i>
-                        <p class="text-sm font-semibold text-slate-900 dark:text-white">Currently</p>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Advanced RAG Pipelines</p>
-                    </div>
+                <h2 class="text-4xl font-bold text-center text-slate-900 dark:text-white mb-12">About Me</h2>
+                <div class="max-w-4xl mx-auto text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                    <p class="mb-8 text-xl text-teal-600 dark:text-teal-400 font-medium">
+                        I bridge the gap between complex AI research and production-grade applications.
+                    </p>
+                    <ul class="space-y-4 mb-8 text-left max-w-2xl mx-auto">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-teal-400 shrink-0 mt-1"></i>
+                            <span><strong>Engineering at Scale:</strong> Built 15+ production-ready applications using
+                                MERN & GenAI stacks.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-teal-400 shrink-0 mt-1"></i>
+                            <span><strong>Automating Value:</strong> Expert in reducing manual workflows by 40-60% using
+                                Puppeteer & Python scripts.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-teal-400 shrink-0 mt-1"></i>
+                            <span><strong>Foundation First:</strong> Strong grasp of DSA (Java) ensures my backend
+                                systems are efficient and scalable.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-teal-400 shrink-0 mt-1"></i>
+                            <span><strong>n8n Automation:</strong> Designed and deployed event-driven automation
+                                workflows using n8n, integrating APIs, AI models, and notification systems to reduce
+                                manual work by 60%.</span>
+                        </li>
+                    </ul>
+                    <p>
+                        My focus isn't just writing code—it's building <strong>assets</strong> that generate revenue,
+                        save time, and solve real business problems.
+                    </p>
                 </div>
             </div>
         </section>
 
         <div class="h-px w-full bg-gradient-to-r from-transparent via-purple-500/30 to-transparent my-0"></div>
-
-        <!-- Experience Timeline -->
-        <section id="journey" class="py-20 bg-transparent scroll-mt-24">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center text-slate-900 dark:text-white mb-4">My Journey</h2>
-                <p class="text-center text-slate-500 dark:text-slate-400 mb-16 max-w-xl mx-auto">From foundations to
-                    freelance — a timeline of growth.</p>
-
-                <div class="relative max-w-3xl mx-auto">
-                    <!-- Vertical line -->
-                    <div
-                        class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-400 via-purple-500 to-blue-500 opacity-30">
-                    </div>
-
-                    <!-- Timeline Item 1 -->
-                    <div class="timeline-item relative flex items-start mb-12 md:mb-16 group">
-                        <div class="hidden md:block md:w-1/2 md:pr-12 text-right">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-xs font-semibold mb-2">2024
-                                — Present</span>
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Freelance AI Automation</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Building automation bots and AI
-                                pipelines for 3+ clients on Fiverr — saving 10+ hrs/week per client.</p>
-                        </div>
-                        <div
-                            class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-teal-400 border-4 border-white dark:border-slate-900 z-10 group-hover:scale-125 transition-transform shadow-lg shadow-teal-400/30">
-                        </div>
-                        <div class="md:hidden ml-12">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-xs font-semibold mb-2">2024
-                                — Present</span>
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Freelance AI Automation</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Building automation bots and AI
-                                pipelines for 3+ clients on Fiverr.</p>
-                        </div>
-                        <div class="hidden md:block md:w-1/2 md:pl-12"></div>
-                    </div>
-
-                    <!-- Timeline Item 2 -->
-                    <div class="timeline-item relative flex items-start mb-12 md:mb-16 group">
-                        <div class="hidden md:block md:w-1/2 md:pr-12"></div>
-                        <div
-                            class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-purple-400 border-4 border-white dark:border-slate-900 z-10 group-hover:scale-125 transition-transform shadow-lg shadow-purple-400/30">
-                        </div>
-                        <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-semibold mb-2">2023</span>
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Full-Stack Deep Dive</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Shipped MedLink Plus, Chat App,
-                                Amazon Price Tracker — MERN stack with real deployments.</p>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 3 -->
-                    <div class="timeline-item relative flex items-start mb-12 md:mb-16 group">
-                        <div class="hidden md:block md:w-1/2 md:pr-12 text-right">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold mb-2">2022</span>
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">CS Engineering + DSA</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Java, algorithms, system design
-                                fundamentals. LeetCode practice and problem-solving foundations.</p>
-                        </div>
-                        <div
-                            class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-blue-400 border-4 border-white dark:border-slate-900 z-10 group-hover:scale-125 transition-transform shadow-lg shadow-blue-400/30">
-                        </div>
-                        <div class="md:hidden ml-12">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold mb-2">2022</span>
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">CS Engineering + DSA</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Java, algorithms, system design
-                                fundamentals.</p>
-                        </div>
-                        <div class="hidden md:block md:w-1/2 md:pl-12"></div>
-                    </div>
-
-                    <!-- Timeline Item 4 -->
-                    <div class="timeline-item relative flex items-start group">
-                        <div class="hidden md:block md:w-1/2 md:pr-12"></div>
-                        <div
-                            class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-amber-400 border-4 border-white dark:border-slate-900 z-10 group-hover:scale-125 transition-transform shadow-lg shadow-amber-400/30">
-                        </div>
-                        <div class="ml-12 md:ml-0 md:w-1/2 md:pl-12">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 text-xs font-semibold mb-2">2021</span>
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">The Beginning</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">First lines of code. Fell in love
-                                with building things from scratch. HTML, CSS, JavaScript basics.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="h-px w-full bg-gradient-to-r from-transparent via-purple-500/30 to-transparent my-0"></div>
-
 
         <!-- Skills Section -->
         <section id="skills" class="py-20 bg-transparent scroll-mt-24">
@@ -994,25 +878,25 @@
                 <!-- Skills Filter Tabs -->
                 <div class="flex flex-wrap justify-center gap-3 mb-12">
                     <button
-                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 aria-selected:bg-white aria-selected:text-teal-600 aria-selected:shadow-sm dark:aria-selected:bg-teal-500/10 dark:aria-selected:text-teal-400 dark:aria-selected:ring-teal-500/50"
+                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 data-[active=true]:bg-white data-[active=true]:text-teal-600 data-[active=true]:shadow-sm dark:data-[active=true]:bg-teal-500/10 dark:data-[active=true]:text-teal-400 dark:data-[active=true]:ring-teal-500/50"
                         data-skill-filter="all" aria-selected="true" role="tab">All</button>
                     <button
-                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 aria-selected:bg-white aria-selected:text-blue-600 aria-selected:shadow-sm dark:aria-selected:bg-blue-500/10 dark:aria-selected:text-blue-400 dark:aria-selected:ring-blue-500/50"
+                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 data-[active=true]:bg-white data-[active=true]:text-blue-600 data-[active=true]:shadow-sm dark:data-[active=true]:bg-blue-500/10 dark:data-[active=true]:text-blue-400 dark:data-[active=true]:ring-blue-500/50"
                         data-skill-filter="ai-ml" aria-selected="false" role="tab">AI / ML</button>
                     <button
-                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 aria-selected:bg-white aria-selected:text-purple-600 aria-selected:shadow-sm dark:aria-selected:bg-purple-500/10 dark:aria-selected:text-purple-400 dark:aria-selected:ring-purple-500/50"
+                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 data-[active=true]:bg-white data-[active=true]:text-purple-600 data-[active=true]:shadow-sm dark:data-[active=true]:bg-purple-500/10 dark:data-[active=true]:text-purple-400 dark:data-[active=true]:ring-purple-500/50"
                         data-skill-filter="genai" aria-selected="false" role="tab">✨ GenAI & LLMs</button>
                     <button
-                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 aria-selected:bg-white aria-selected:text-teal-600 aria-selected:shadow-sm dark:aria-selected:bg-teal-500/10 dark:aria-selected:text-teal-400 dark:aria-selected:ring-teal-500/50"
+                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 data-[active=true]:bg-white data-[active=true]:text-teal-600 data-[active=true]:shadow-sm dark:data-[active=true]:bg-teal-500/10 dark:data-[active=true]:text-teal-400 dark:data-[active=true]:ring-teal-500/50"
                         data-skill-filter="backend" aria-selected="false" role="tab">Backend & APIs</button>
                     <button
-                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 aria-selected:bg-white aria-selected:text-teal-600 aria-selected:shadow-sm dark:aria-selected:bg-teal-500/10 dark:aria-selected:text-teal-400 dark:aria-selected:ring-teal-500/50"
+                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 data-[active=true]:bg-white data-[active=true]:text-teal-600 data-[active=true]:shadow-sm dark:data-[active=true]:bg-teal-500/10 dark:data-[active=true]:text-teal-400 dark:data-[active=true]:ring-teal-500/50"
                         data-skill-filter="frontend" aria-selected="false" role="tab">Full Stack</button>
                     <button
-                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 aria-selected:bg-white aria-selected:text-teal-600 aria-selected:shadow-sm dark:aria-selected:bg-teal-500/10 dark:aria-selected:text-teal-400 dark:aria-selected:ring-teal-500/50"
+                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 data-[active=true]:bg-white data-[active=true]:text-teal-600 data-[active=true]:shadow-sm dark:data-[active=true]:bg-teal-500/10 dark:data-[active=true]:text-teal-400 dark:data-[active=true]:ring-teal-500/50"
                         data-skill-filter="databases" aria-selected="false" role="tab">Databases</button>
                     <button
-                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 aria-selected:bg-white aria-selected:text-teal-600 aria-selected:shadow-sm dark:aria-selected:bg-teal-500/10 dark:aria-selected:text-teal-400 dark:aria-selected:ring-teal-500/50"
+                        class="tab px-5 py-2 rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white transition ring-1 ring-slate-200 dark:ring-white/5 data-[active=true]:bg-white data-[active=true]:text-teal-600 data-[active=true]:shadow-sm dark:data-[active=true]:bg-teal-500/10 dark:data-[active=true]:text-teal-400 dark:data-[active=true]:ring-teal-500/50"
                         data-skill-filter="devops" aria-selected="false" role="tab">DevOps & Cloud</button>
                 </div>
 
@@ -1269,300 +1153,310 @@
                         Work</span>
                 </div>
                 <h2 class="text-4xl font-bold text-center text-slate-900 dark:text-white mb-12">Featured Projects</h2>
-                <div class="flex flex-col gap-32 max-w-7xl mx-auto">
-
-                    <!-- Cinematic Project 1: MedLink Plus -->
-                    <div class="cinematic-card relative w-full h-[60vh] md:h-[75vh] rounded-3xl overflow-hidden group shadow-2xl transition-all duration-500 bg-slate-900 cursor-pointer border border-white/5"
-                        onclick="window.open('https://med-link-plus.vercel.app/', '_blank')">
-                        <img src="./images/Screenshot%202025-08-24%20115218.png" alt="MedLink Plus" loading="lazy"
-                            class="cinematic-img absolute inset-0 w-[110%] h-[110%] max-w-none object-cover transition-transform duration-700 ease-out brightness-50 contrast-125 grayscale-[30%] group-hover:brightness-90 group-hover:grayscale-0">
-
-                        <!-- Top Letterbox -->
-                        <div
-                            class="absolute top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] flex items-center justify-center overflow-hidden">
+                <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    <!-- Project Card 1 -->
+                    <div class="reveal tilt-card group relative overflow-hidden rounded-xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-300 project-card-hover"
+                        role="button" tabindex="0" aria-haspopup="dialog" data-project-id="medlink">
+                        <div class="relative">
                             <span
-                                class="text-[10px] md:text-xs uppercase tracking-[0.4em] md:tracking-[0.6em] font-bold text-white/50 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0">A
-                                Manav Varia Production</span>
-                        </div>
-
-                        <!-- Bottom Letterbox -->
-                        <div
-                            class="absolute bottom-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden relative">
+                                class="absolute top-4 left-4 z-10 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs text-white ring-1 ring-white/20">
+                                <i data-lucide="star" class="w-3.5 h-3.5 text-yellow-300"></i> Featured
+                            </span>
+                            <img src="./images/Screenshot%202025-08-24%20115218.png"
+                                alt="MedLink Plus healthcare platform interface" width="600" height="400" loading="lazy"
+                                decoding="async" class="w-full aspect-video object-cover">
                             <div
-                                class="flex gap-4 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0">
-                                <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-teal-400">MERN
-                                    Stack</span>
-                                <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-teal-400">OpenRouter
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                <span
+                                    class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md text-slate-900 dark:text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2 border border-slate-200 dark:border-white/10">
+                                    <i data-lucide="mouse-pointer-2" class="w-4 h-4 text-teal-500"></i> Click for
+                                    Details
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 project-info">
+                            <h3
+                                class="text-2xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition-colors">
+                                MedLink Plus</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-4">Built a comprehensive healthcare platform
+                                using MERN &
+                                OpenRouter API that reduced patient appointment booking time by 50%.</p>
+
+                            <!-- Project Stats -->
+                            <div
+                                class="mb-4 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-3">
+                                <p class="mb-1"><strong class="text-teal-400">Problem:</strong> Inefficient
+                                    doctor-patient matching & scheduling.</p>
+                                <p><strong class="text-teal-400">Outcome:</strong> Streamlined 100+ interactions &
+                                    reduced wait times.</p>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-slate-100 dark:bg-teal-500/15 text-slate-700 dark:text-teal-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">AI
+                                    Chatbot</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-teal-500/15 text-slate-700 dark:text-teal-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">OpenRouter
                                     API</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-teal-500/15 text-slate-700 dark:text-teal-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Healthcare</span>
                             </div>
-                            <div
-                                class="flex gap-6 mt-4 md:mt-0 transition-all duration-700 delay-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 relative z-50">
-                                <a href="#"
-                                    onclick="event.stopPropagation(); window.open('https://github.com/ManavVaria117/MedLinkPlus.git', '_blank')"
-                                    class="text-white/60 hover:text-white text-xs uppercase tracking-widest font-bold relative z-50">Source</a>
-                                <div class="w-1 h-1 rounded-full bg-white/20 mt-1.5"></div>
-                                <a href="#"
-                                    onclick="event.stopPropagation(); window.open('https://med-link-plus.vercel.app/', '_blank')"
-                                    class="text-white hover:text-teal-400 text-xs uppercase tracking-widest font-bold relative z-50">Live
-                                    Preview</a>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://github.com/ManavVaria117/MedLinkPlus.git" target="_blank"
+                                    rel="noopener noreferrer" aria-label="View MedLink Plus source on GitHub"
+                                    class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-teal-500 to-purple-600 px-4 py-2 text-white font-semibold shadow-lg shadow-teal-500/20 hover:from-teal-400 hover:to-purple-500 transition">
+                                    Source <i data-lucide="github" class="w-4 h-4"></i>
+                                </a>
+                                <a href="https://med-link-plus.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Open Amazon Price Tracker live demo"
+                                    class="inline-flex items-center gap-2 rounded-full bg-white/10 ring-1 ring-white/20 px-4 py-2 text-white hover:bg-white/20 transition">
+                                    Live Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+                                </a>
                             </div>
-                        </div>
-
-                        <!-- Dark Vignette -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-slate-950 z-10 pointer-events-none opacity-80 group-hover:opacity-40 transition-opacity duration-700">
-                        </div>
-
-                        <!-- Center Core Text -->
-                        <div
-                            class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center p-8 pointer-events-none">
-                            <span
-                                class="text-teal-400 text-xs font-bold tracking-[0.4em] uppercase mb-6 opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-100">Top
-                                Rated Platform</span>
-
-                            <h3 class="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 tracking-tighter uppercase transform translate-y-12 opacity-40 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out"
-                                style="text-shadow: 0 20px 40px rgba(0,0,0,0.8);">
-                                MedLink Plus
-                            </h3>
-
-                            <p
-                                class="mt-8 max-w-2xl text-lg text-slate-300 font-medium opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-200 ease-out">
-                                A comprehensive healthcare platform reducing patient appointment booking time by 50%.
-                            </p>
-                            <p
-                                class="mt-4 text-xs text-teal-500 font-medium tracking-widest uppercase opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-300">
-                                Over 100+ interactions streamlined smoothly.
-                            </p>
                         </div>
                     </div>
-
-                    <!-- Cinematic Project 2: AI Chat Site -->
-                    <div class="cinematic-card relative w-full h-[60vh] md:h-[75vh] rounded-3xl overflow-hidden group shadow-2xl transition-all duration-500 bg-slate-900 cursor-pointer border border-white/5"
-                        onclick="window.open('https://github.com/ManavVaria117/chatapp', '_blank')">
-                        <img src="./images/chatapp/Screenshot 2025-08-24 122819.png" alt="AI Chat Site" loading="lazy"
-                            class="cinematic-img absolute inset-0 w-[110%] h-[110%] max-w-none object-cover transition-transform duration-700 ease-out brightness-50 contrast-125 grayscale-[30%] group-hover:brightness-90 group-hover:grayscale-0">
-
-                        <div
-                            class="absolute top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] flex items-center justify-center overflow-hidden">
-                            <span
-                                class="text-[10px] md:text-xs uppercase tracking-[0.4em] md:tracking-[0.6em] font-bold text-white/50 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0">A
-                                Manav Varia Production</span>
-                        </div>
-
-                        <div
-                            class="absolute bottom-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden relative">
+                    <!-- Project Card 2 -->
+                    <div class="reveal tilt-card group relative overflow-hidden rounded-xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-300 project-card-hover"
+                        role="button" tabindex="0" aria-haspopup="dialog" data-project-id="chat">
+                        <div class="relative">
+                            <img src="./images/chatapp/Screenshot 2025-08-24 122819.png" alt="Chat user interface theme"
+                                width="600" height="400" loading="lazy" decoding="async"
+                                class="w-full aspect-video object-cover">
                             <div
-                                class="flex gap-4 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0">
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                                 <span
-                                    class="text-[10px] uppercase tracking-[0.3em] font-bold text-purple-400">Real-Time</span>
-                                <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-purple-400">Hugging
+                                    class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md text-slate-900 dark:text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2 border border-slate-200 dark:border-white/10">
+                                    <i data-lucide="mouse-pointer-2" class="w-4 h-4 text-teal-500"></i> Click for
+                                    Details
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 project-info">
+                            <h3
+                                class="text-2xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition-colors">
+                                AI-Powered Chat Site</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-4">Developed a real-time chat system with
+                                emotional intelligence
+                                using Hugging Face that improved user engagement by analysing sentiment.</p>
+
+                            <!-- Project Stats -->
+                            <div
+                                class="mb-4 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-3">
+                                <p class="mb-1"><strong class="text-teal-400">Problem:</strong> Static, unengaging
+                                    support chats.</p>
+                                <p><strong class="text-teal-400">Outcome:</strong> Instant sentiment feedback loop & 2x
+                                    engagement.</p>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-slate-100 dark:bg-purple-500/15 text-slate-700 dark:text-purple-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Real-Time</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-purple-500/15 text-slate-700 dark:text-purple-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Hugging
                                     Face</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-purple-500/15 text-slate-700 dark:text-purple-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Sentiment
+                                    Analysis</span>
                             </div>
-                            <div
-                                class="flex gap-6 mt-4 md:mt-0 transition-all duration-700 delay-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 relative z-50">
-                                <a href="#"
-                                    onclick="event.stopPropagation(); window.open('https://github.com/ManavVaria117/chatapp', '_blank')"
-                                    class="text-white/60 hover:text-white text-xs uppercase tracking-widest font-bold">Source</a>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://github.com/ManavVaria117/chatapp" target="_blank"
+                                    rel="noopener noreferrer" aria-label="View Chat Site source on GitHub"
+                                    class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-teal-500 to-purple-600 px-4 py-2 text-white font-semibold shadow-lg shadow-teal-500/20 hover:from-teal-400 hover:to-purple-500 transition">
+                                    Source <i data-lucide="github" class="w-4 h-4"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Chat Site demo not available yet"
+                                    class="inline-flex items-center gap-2 rounded-full bg-white/10 ring-1 ring-white/20 px-4 py-2 text-white hover:bg-white/20 transition opacity-60 cursor-not-allowed">
+                                    Not Active Yet <i data-lucide="clock" class="w-4 h-4"></i>
+                                </a>
                             </div>
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-slate-950 z-10 pointer-events-none opacity-80 group-hover:opacity-40 transition-opacity duration-700">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center p-8 pointer-events-none">
-                            <span
-                                class="text-purple-400 text-xs font-bold tracking-[0.4em] uppercase mb-6 opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-100">Sci-Fi
-                                Interaction</span>
-                            <h3 class="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 tracking-tighter uppercase transform translate-y-12 opacity-40 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out"
-                                style="text-shadow: 0 20px 40px rgba(0,0,0,0.8);">
-                                Intelligent Chat
-                            </h3>
-                            <p
-                                class="mt-8 max-w-2xl text-lg text-slate-300 font-medium opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-200 ease-out">
-                                A real-time chat system with emotional intelligence tracking sentiment to improve
-                                engagement.
-                            </p>
-                            <p
-                                class="mt-4 text-xs text-purple-500 font-medium tracking-widest uppercase opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-300">
-                                Delivering 2x expected interaction rates.
-                            </p>
                         </div>
                     </div>
 
-                    <!-- Cinematic Project 3: Amazon Price Tracker -->
-                    <div class="cinematic-card relative w-full h-[60vh] md:h-[75vh] rounded-3xl overflow-hidden group shadow-2xl transition-all duration-500 bg-slate-900 cursor-pointer border border-white/5"
-                        onclick="window.open('https://amazon-price-tracker-one.vercel.app/', '_blank')">
-                        <img src="./images/amazon bot/Screenshot 2025-08-24 123823.png" alt="Amazon Price Tracker"
-                            loading="lazy"
-                            class="cinematic-img absolute inset-0 w-[110%] h-[110%] max-w-none object-cover transition-transform duration-700 ease-out brightness-50 contrast-125 grayscale-[30%] group-hover:brightness-90 group-hover:grayscale-0">
-
-                        <div
-                            class="absolute top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] flex items-center justify-center overflow-hidden">
-                            <span
-                                class="text-[10px] md:text-xs uppercase tracking-[0.4em] md:tracking-[0.6em] font-bold text-white/50 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0">A
-                                Manav Varia Production</span>
-                        </div>
-
-                        <div
-                            class="absolute bottom-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden relative">
+                    <!-- Project Card 3 -->
+                    <div class="reveal tilt-card group relative overflow-hidden rounded-xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-300 project-card-hover"
+                        role="button" tabindex="0" aria-haspopup="dialog" data-project-id="tracker">
+                        <div class="relative">
+                            <img src="./images/amazon bot/Screenshot 2025-08-24 123823.png"
+                                alt="Analytics dashboard theme for price tracker" width="600" height="400"
+                                loading="lazy" decoding="async" class="w-full aspect-video object-cover">
                             <div
-                                class="flex gap-4 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0">
-                                <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-sky-400">React</span>
-                                <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-sky-400">Data
-                                    Viz</span>
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100">
                             </div>
                             <div
-                                class="flex gap-6 mt-4 md:mt-0 transition-all duration-700 delay-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 relative z-50">
-                                <a href="#"
-                                    onclick="event.stopPropagation(); window.open('https://github.com/ManavVaria117/amazonPriceTracker', '_blank')"
-                                    class="text-white/60 hover:text-white text-xs uppercase tracking-widest font-bold">Source</a>
-                                <div class="w-1 h-1 rounded-full bg-white/20 mt-1.5"></div>
-                                <a href="#"
-                                    onclick="event.stopPropagation(); window.open('https://amazon-price-tracker-one.vercel.app/', '_blank')"
-                                    class="text-white hover:text-sky-400 text-xs uppercase tracking-widest font-bold">Live
-                                    Preview</a>
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                <span
+                                    class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md text-slate-900 dark:text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2 border border-slate-200 dark:border-white/10">
+                                    <i data-lucide="mouse-pointer-2" class="w-4 h-4 text-teal-500"></i> Click for
+                                    Details
+                                </span>
                             </div>
                         </div>
+                        <div class="p-6 project-info">
+                            <h3
+                                class="text-2xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition-colors">
+                                Amazon Price Tracker</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-4">Engineered a price tracking dashboard
+                                that helps users save
+                                money by visualizing historical price data and predicting drops.</p>
 
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-slate-950 z-10 pointer-events-none opacity-80 group-hover:opacity-40 transition-opacity duration-700">
-                        </div>
+                            <!-- Project Stats -->
+                            <div
+                                class="mb-4 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-3">
+                                <p class="mb-1"><strong class="text-teal-400">Problem:</strong> Overpaying due to market
+                                    price fluctuation.</p>
+                                <p><strong class="text-teal-400">Outcome:</strong> Saved users ~15% on tracked
+                                    purchases.</p>
+                            </div>
 
-                        <div
-                            class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center p-8 pointer-events-none">
-                            <span
-                                class="text-sky-400 text-xs font-bold tracking-[0.4em] uppercase mb-6 opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-100">Heist
-                                Analytics</span>
-                            <h3 class="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 tracking-tighter uppercase transform translate-y-12 opacity-40 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out"
-                                style="text-shadow: 0 20px 40px rgba(0,0,0,0.8);">
-                                Price Tracker
-                            </h3>
-                            <p
-                                class="mt-8 max-w-2xl text-lg text-slate-300 font-medium opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-200 ease-out">
-                                Defeating the market algorithm. An analytical dashboard to predict drops and secure
-                                savings.
-                            </p>
-                            <p
-                                class="mt-4 text-xs text-sky-500 font-medium tracking-widest uppercase opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-300">
-                                Avg. 15% User Savings Verified.
-                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-slate-100 dark:bg-blue-500/15 text-slate-700 dark:text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">React</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-blue-500/15 text-slate-700 dark:text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Frontend</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-blue-500/15 text-slate-700 dark:text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Data
+                                    Visualization</span>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://github.com/ManavVaria117/amazonPriceTracker" target="_blank"
+                                    rel="noopener noreferrer" aria-label="View Amazon Price Tracker source on GitHub"
+                                    class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-teal-500 to-purple-600 px-4 py-2 text-white font-semibold shadow-lg shadow-teal-500/20 hover:from-teal-400 hover:to-purple-500 transition">
+                                    Source <i data-lucide="github" class="w-4 h-4"></i>
+                                </a>
+                                <a href="https://amazon-price-tracker-one.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Open Amazon Price Tracker live demo"
+                                    class="inline-flex items-center gap-2 rounded-full bg-white/10 ring-1 ring-white/20 px-4 py-2 text-white hover:bg-white/20 transition">
+                                    Live Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Cinematic Project 4: AI Health Checker -->
-                    <div class="cinematic-card relative w-full h-[60vh] md:h-[75vh] rounded-3xl overflow-hidden group shadow-2xl transition-all duration-500 bg-slate-900 cursor-pointer border border-white/5"
-                        onclick="window.open('https://healthcheck-xi.vercel.app/', '_blank')">
-                        <img src="./images/healthChecker/Screenshot 2025-10-21 023047.png" alt="AI Health Checker"
-                            loading="lazy"
-                            class="cinematic-img absolute inset-0 w-[110%] h-[110%] max-w-none object-cover transition-transform duration-700 ease-out brightness-50 contrast-125 grayscale-[30%] group-hover:brightness-90 group-hover:grayscale-0">
-
-                        <div
-                            class="absolute top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] flex items-center justify-center overflow-hidden">
-                            <span
-                                class="text-[10px] md:text-xs uppercase tracking-[0.4em] md:tracking-[0.6em] font-bold text-white/50 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0">A
-                                Manav Varia Production</span>
-                        </div>
-
-                        <div
-                            class="absolute bottom-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden relative">
+                    <!-- Project Card 4: AI Health Checker -->
+                    <div class="reveal tilt-card group relative overflow-hidden rounded-xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-300 project-card-hover"
+                        role="button" tabindex="0" aria-haspopup="dialog" data-project-id="healthchecker">
+                        <div class="relative">
+                            <img src="./images/healthChecker/Screenshot 2025-10-21 023047.png"
+                                alt="AI Health Checker interface" width="600" height="400" loading="lazy"
+                                decoding="async" class="w-full aspect-video object-cover">
                             <div
-                                class="flex gap-4 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0">
-                                <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-green-400">Flask +
-                                    Python</span>
-                                <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-green-400">AI
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100">
+                            </div>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                <span
+                                    class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md text-slate-900 dark:text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2 border border-slate-200 dark:border-white/10">
+                                    <i data-lucide="mouse-pointer-2" class="w-4 h-4 text-teal-500"></i> Click for
+                                    Details
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 project-info">
+                            <h3
+                                class="text-2xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition-colors">
+                                AI Health Checker</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-4">
+                                Created an AI-driven wellness assistant using Flask & Python that provides instant
+                                symptom analysis key health metrics.
+                            </p>
+
+                            <!-- Project Stats -->
+                            <div
+                                class="mb-4 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-3">
+                                <p class="mb-1"><strong class="text-teal-400">Problem:</strong> Lack of immediate,
+                                    reliable health guidance.</p>
+                                <p><strong class="text-teal-400">Outcome:</strong> Instant triage & personalized health
+                                    insights.</p>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-slate-100 dark:bg-green-500/15 text-slate-700 dark:text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">AI
                                     Model</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-green-500/15 text-slate-700 dark:text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Flask
+                                    + Python</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-green-500/15 text-slate-700 dark:text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">React
+                                    Frontend</span>
                             </div>
-                            <div
-                                class="flex gap-6 mt-4 md:mt-0 transition-all duration-700 delay-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 relative z-50">
-                                <a href="#"
-                                    onclick="event.stopPropagation(); window.open('https://github.com/ManavVaria117/healthChecker', '_blank')"
-                                    class="text-white/60 hover:text-white text-xs uppercase tracking-widest font-bold">Source</a>
-                                <div class="w-1 h-1 rounded-full bg-white/20 mt-1.5"></div>
-                                <a href="#"
-                                    onclick="event.stopPropagation(); window.open('https://healthcheck-xi.vercel.app/', '_blank')"
-                                    class="text-white hover:text-green-400 text-xs uppercase tracking-widest font-bold">Live
-                                    Preview</a>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://github.com/ManavVaria117/healthChecker" target="_blank"
+                                    rel="noopener noreferrer" aria-label="View AI Health Checker source on GitHub"
+                                    class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-teal-500 to-purple-600 px-4 py-2 text-white font-semibold shadow-lg shadow-teal-500/20 hover:from-teal-400 hover:to-purple-500 transition">
+                                    Source <i data-lucide="github" class="w-4 h-4"></i>
+                                </a>
+                                <a href="https://healthcheck-xi.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Open AI Health Checker live demo"
+                                    class="inline-flex items-center gap-2 rounded-full bg-white/10 ring-1 ring-white/20 px-4 py-2 text-white hover:bg-white/20 transition">
+                                    Live Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+                                </a>
                             </div>
-                        </div>
-
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-slate-950 z-10 pointer-events-none opacity-80 group-hover:opacity-40 transition-opacity duration-700">
-                        </div>
-
-                        <div
-                            class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center p-8 pointer-events-none">
-                            <span
-                                class="text-green-400 text-xs font-bold tracking-[0.4em] uppercase mb-6 opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-100">Medical
-                                Thriller</span>
-                            <h3 class="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 tracking-tighter uppercase transform translate-y-12 opacity-40 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out"
-                                style="text-shadow: 0 20px 40px rgba(0,0,0,0.8);">
-                                AI Health Triage
-                            </h3>
-                            <p
-                                class="mt-8 max-w-2xl text-lg text-slate-300 font-medium opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-200 ease-out">
-                                Instant symptom analysis driven by custom Python models for reliable health guidance.
-                            </p>
-                            <p
-                                class="mt-4 text-xs text-green-500 font-medium tracking-widest uppercase opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-300">
-                                Real-Time Personal Insights.
-                            </p>
                         </div>
                     </div>
 
-                    <!-- Cinematic Project 5: Automation Dashboard -->
-                    <div class="cinematic-card relative w-full h-[60vh] md:h-[75vh] rounded-3xl overflow-hidden group shadow-2xl transition-all duration-500 bg-slate-900 cursor-pointer border border-white/5"
-                        onclick="window.open('https://github.com/ManavVaria117/Bot_attendance', '_blank')">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                            alt="Automation" loading="lazy"
-                            class="cinematic-img absolute inset-0 w-[110%] h-[110%] max-w-none object-cover transition-transform duration-700 ease-out brightness-50 contrast-125 grayscale-[30%] group-hover:brightness-90 group-hover:grayscale-0">
-
-                        <div
-                            class="absolute top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] flex items-center justify-center overflow-hidden">
-                            <span
-                                class="text-[10px] md:text-xs uppercase tracking-[0.4em] md:tracking-[0.6em] font-bold text-white/50 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform -translate-y-4 group-hover:translate-y-0">A
-                                Manav Varia Production</span>
-                        </div>
-
-                        <div
-                            class="absolute bottom-0 left-0 w-full bg-black/90 backdrop-blur-sm z-20 transition-all duration-[600ms] ease-out h-0 group-hover:h-[15%] px-12 flex flex-col md:flex-row items-center justify-between overflow-hidden relative">
+                    <!-- Project Card 5 -->
+                    <div class="reveal tilt-card group relative overflow-hidden rounded-xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-300 project-card-hover"
+                        role="button" tabindex="0" aria-haspopup="dialog" data-project-id="automation">
+                        <div class="relative">
+                            <img src="https://source.unsplash.com/1200x800/?automation,robotics,software"
+                                alt="Automation and robotics theme" width="600" height="400" loading="lazy"
+                                decoding="async" class="w-full aspect-video object-cover">
                             <div
-                                class="flex gap-4 transition-all duration-700 delay-200 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0">
-                                <span
-                                    class="text-[10px] uppercase tracking-[0.3em] font-bold text-rose-400">Puppeteer</span>
-                                <span
-                                    class="text-[10px] uppercase tracking-[0.3em] font-bold text-rose-400">MongoDB</span>
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100">
                             </div>
                             <div
-                                class="flex gap-6 mt-4 md:mt-0 transition-all duration-700 delay-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 relative z-50">
-                                <a href="#"
-                                    onclick="event.stopPropagation(); window.open('https://github.com/ManavVaria117/Bot_attendance', '_blank')"
-                                    class="text-white/60 hover:text-white text-xs uppercase tracking-widest font-bold">Source</a>
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                <span
+                                    class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md text-slate-900 dark:text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2 border border-slate-200 dark:border-white/10">
+                                    <i data-lucide="mouse-pointer-2" class="w-4 h-4 text-teal-500"></i> Click for
+                                    Details
+                                </span>
                             </div>
                         </div>
+                        <div class="p-6 project-info">
+                            <h3
+                                class="text-2xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition-colors">
+                                Automation Dashboard</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-4">Automated manual attendance logging using
+                                Puppeteer, saving HR
+                                teams ~10 hours per week in data entry.</p>
 
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-slate-950 z-10 pointer-events-none opacity-80 group-hover:opacity-40 transition-opacity duration-700">
-                        </div>
+                            <!-- Project Stats -->
+                            <div
+                                class="mb-4 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-3">
+                                <p class="mb-1"><strong class="text-teal-400">Problem:</strong> Repetitive, error-prone
+                                    manual entry.</p>
+                                <p><strong class="text-teal-400">Outcome:</strong> 100% automated & error-free
+                                    attendance logging.</p>
+                            </div>
 
-                        <div
-                            class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center p-8 pointer-events-none">
-                            <span
-                                class="text-rose-400 text-xs font-bold tracking-[0.4em] uppercase mb-6 opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-100">Cyberpunk
-                                Action</span>
-                            <h3 class="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 tracking-tighter uppercase transform translate-y-12 opacity-40 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out"
-                                style="text-shadow: 0 20px 40px rgba(0,0,0,0.8);">
-                                Ghost Automation
-                            </h3>
-                            <p
-                                class="mt-8 max-w-2xl text-lg text-slate-300 font-medium opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-200 ease-out">
-                                Zero-click headless scripts saving HR teams massive hours in endless data entry.
-                            </p>
-                            <p
-                                class="mt-4 text-xs text-rose-500 font-medium tracking-widest uppercase opacity-0 group-hover:opacity-100 transform translate-y-8 group-hover:translate-y-0 transition-all duration-700 delay-300">
-                                Over 10 Hours Saved Per User, Weekly.
-                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-slate-100 dark:bg-red-500/15 text-slate-700 dark:text-red-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Puppeteer</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-red-500/15 text-slate-700 dark:text-red-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">Automation</span>
+                                <span
+                                    class="bg-slate-100 dark:bg-red-500/15 text-slate-700 dark:text-red-300 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200 dark:border-transparent">MongoDB</span>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://github.com/ManavVaria117/Bot_attendance" target="_blank"
+                                    rel="noopener noreferrer" aria-label="View Automation Dashboard source on GitHub"
+                                    class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-teal-500 to-purple-600 px-4 py-2 text-white font-semibold shadow-lg shadow-teal-500/20 hover:from-teal-400 hover:to-purple-500 transition">
+                                    Source <i data-lucide="github" class="w-4 h-4"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Automation Dashboard demo not available yet"
+                                    class="inline-flex items-center gap-2 rounded-full bg-white/10 ring-1 ring-white/20 px-4 py-2 text-white hover:bg-white/20 transition opacity-60 cursor-not-allowed">
+                                    Not Active Yet <i data-lucide="clock" class="w-4 h-4"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1645,61 +1539,9 @@
     </main>
 
     <!-- Footer -->
-    <footer
-        class="bg-slate-900/80 dark:bg-slate-950/80 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 py-12">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <!-- CTA -->
-                <div class="text-center mb-8">
-                    <p class="text-2xl font-bold text-white mb-2">Let's work together.</p>
-                    <a href="mailto:variamanav117@gmail.com"
-                        class="text-teal-400 hover:text-teal-300 transition-colors text-lg">variamanav117@gmail.com</a>
-                </div>
-                <!-- Social Links -->
-                <div class="flex justify-center gap-4 mb-8">
-                    <a href="https://github.com/ManavVaria117" target="_blank" rel="noopener noreferrer"
-                        aria-label="GitHub"
-                        class="group p-3 rounded-full bg-white/5 text-slate-400 hover:text-white hover:bg-white/10 transition-all border border-white/5">
-                        <svg class="w-5 h-5 group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24"
-                            aria-hidden="true">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/manav-varia/" target="_blank" rel="noopener noreferrer"
-                        aria-label="LinkedIn"
-                        class="group p-3 rounded-full bg-white/5 text-slate-400 hover:text-blue-400 hover:bg-blue-900/20 transition-all border border-white/5">
-                        <svg class="w-5 h-5 group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24"
-                            aria-hidden="true">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.fiverr.com/manav_varia" target="_blank" rel="noopener noreferrer"
-                        aria-label="Fiverr"
-                        class="group p-3 rounded-full bg-white/5 text-slate-400 hover:text-[#1DBF73] hover:bg-green-900/20 transition-all border border-white/5">
-                        <img src="https://cdn.simpleicons.org/fiverr/1DBF73"
-                            class="w-5 h-5 group-hover:scale-110 transition-transform" alt="Fiverr">
-                    </a>
-                    <a href="https://leetcode.com/ManavVaria117/" target="_blank" rel="noopener noreferrer"
-                        aria-label="LeetCode"
-                        class="group p-3 rounded-full bg-white/5 text-slate-400 hover:text-orange-400 hover:bg-orange-900/20 transition-all border border-white/5">
-                        <img src="https://cdn.simpleicons.org/leetcode/FFA116"
-                            class="w-5 h-5 group-hover:scale-110 transition-transform" alt="LeetCode">
-                    </a>
-                    <a href="https://wa.me/916351171448" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
-                        class="group p-3 rounded-full bg-white/5 text-slate-400 hover:text-green-400 hover:bg-green-900/20 transition-all border border-white/5">
-                        <i data-lucide="message-circle" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
-                    </a>
-                </div>
-                <!-- Bottom -->
-                <div
-                    class="flex flex-col md:flex-row items-center justify-between text-sm text-slate-500 border-t border-slate-700 pt-6">
-                    <p>Built with MERN, Three.js & ☕</p>
-                    <p>&copy; 2026 Manav Varia. All rights reserved.</p>
-                </div>
-            </div>
+    <footer class="bg-slate-900/50 backdrop-blur-md border-t border-slate-800 py-6">
+        <div class="container mx-auto px-6 text-center text-slate-400">
+            <p>&copy; 2026 Manav Varia. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -1775,25 +1617,9 @@
                     </div>
                     <div
                         class="bg-slate-100 dark:bg-slate-800 p-3 rounded-2xl rounded-tl-none text-slate-700 dark:text-slate-300 shadow-sm max-w-[85%]">
-                        Hi! I'm Manav's AI Assistant. Ask me about his <strong>skills</strong>,
-                        <strong>projects</strong>, how to <strong>contact</strong>
-                        him, or <strong>why you should hire him</strong>!
+                        Hi! I'm Manav's AI Assistant. Ask me about his **skills**, **projects**, how to **contact**
+                        him! or **why should we hire him ?** .
                     </div>
-                </div>
-                <!-- Quick Reply Buttons -->
-                <div class="flex flex-wrap gap-2 mt-3 px-1">
-                    <button
-                        class="chat-quick-btn px-3 py-1.5 text-xs font-medium rounded-full bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-700/50 hover:bg-teal-100 dark:hover:bg-teal-800/40 transition-all"
-                        data-query="What are Manav's top skills?">🛠️ Skills</button>
-                    <button
-                        class="chat-quick-btn px-3 py-1.5 text-xs font-medium rounded-full bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-700/50 hover:bg-purple-100 dark:hover:bg-purple-800/40 transition-all"
-                        data-query="Tell me about Manav's projects">📂 Projects</button>
-                    <button
-                        class="chat-quick-btn px-3 py-1.5 text-xs font-medium rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700/50 hover:bg-blue-100 dark:hover:bg-blue-800/40 transition-all"
-                        data-query="How can I contact Manav?">📧 Contact</button>
-                    <button
-                        class="chat-quick-btn px-3 py-1.5 text-xs font-medium rounded-full bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-700/50 hover:bg-amber-100 dark:hover:bg-amber-800/40 transition-all"
-                        data-query="Why should we hire Manav?">💼 Hire Me</button>
                 </div>
             </div>
             <div class="p-3 border-t border-slate-200 dark:border-slate-700 bg-white/50 dark:bg-slate-900/50 shrink-0">
@@ -1855,59 +1681,29 @@
         });
 
         // Animate Numbers
-        // Typewriter Effect
-        (() => {
-            const typewriterEl = document.getElementById('typewriter-text');
-            if (!typewriterEl) return;
-            const phrases = ['automate work.', 'scale revenue.', 'save 10+ hrs/week.', 'turn ideas into products.'];
-            let phraseIdx = 0, charIdx = 0, isDeleting = false;
-            const type = () => {
-                const currentPhrase = phrases[phraseIdx];
-                if (isDeleting) {
-                    typewriterEl.textContent = currentPhrase.substring(0, charIdx--);
-                    if (charIdx < 0) { isDeleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; setTimeout(type, 400); return; }
-                    setTimeout(type, 40);
-                } else {
-                    typewriterEl.textContent = currentPhrase.substring(0, charIdx++);
-                    if (charIdx > currentPhrase.length) { isDeleting = true; setTimeout(type, 2000); return; }
-                    setTimeout(type, 80);
-                }
-            };
-            setTimeout(type, 800);
-        })();
+        const animateNumbers = () => {
+            const stats = document.querySelectorAll('.text-3xl.font-extrabold');
+            stats.forEach(stat => {
+                const target = parseInt(stat.innerText);
+                if (isNaN(target)) return;
 
-        // Scroll-triggered Stat Counter Animation
-        (() => {
-            const statsSection = document.getElementById('stats-section');
-            if (!statsSection) return;
-            let hasAnimated = false;
-            const animateCounters = () => {
-                if (hasAnimated) return;
-                hasAnimated = true;
-                const counters = statsSection.querySelectorAll('.stat-number');
-                counters.forEach(el => {
-                    const target = parseInt(el.getAttribute('data-target'));
-                    if (isNaN(target)) return;
-                    const duration = 1500;
-                    const startTime = performance.now();
-                    const easeOutQuart = t => 1 - Math.pow(1 - t, 4);
-                    const step = (now) => {
-                        const elapsed = now - startTime;
-                        const progress = Math.min(elapsed / duration, 1);
-                        const current = Math.round(easeOutQuart(progress) * target);
-                        el.textContent = current + '+';
-                        el.style.transform = `scale(${1 + (1 - progress) * 0.1})`;
-                        if (progress < 1) requestAnimationFrame(step);
-                        else el.style.transform = '';
-                    };
-                    requestAnimationFrame(step);
-                });
-            };
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => { if (entry.isIntersecting) animateCounters(); });
-            }, { threshold: 0.3 });
-            observer.observe(statsSection);
-        })();
+                let current = 0;
+                const increment = target / 50; // speed
+                const updateCount = () => {
+                    if (current < target) {
+                        current += increment;
+                        stat.innerText = Math.ceil(current) + '+';
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        stat.innerText = target + '+';
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        // Trigger animation when hero is visible
+        setTimeout(animateNumbers, 500);
 
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -2539,7 +2335,7 @@
             };
 
             animateCards('.skill-card', 0.03); // Faster stagger
-            animateCards('.project-card-hover', 0.1);
+            animateCards('.project-card', 0.1);
 
             // 4. Magnetic Buttons (Feature 2)
             if (window.innerWidth >= 768 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -2645,34 +2441,17 @@
                 sendBtn.disabled = loading;
 
                 if (loading) {
+                    // Lucide replaces <i> with <svg>, so manipulating attributes on the original <i> reference fails.
+                    // Easiest fix: Re-inject the HTML for the loader.
                     sendBtn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>';
                     inputEl.placeholder = "Thinking...";
-                    // Add typing indicator bubble
-                    const typingRow = document.createElement('div');
-                    typingRow.id = 'typing-indicator';
-                    typingRow.className = 'flex items-start gap-2 animate-fade-in-up';
-                    typingRow.innerHTML = `
-                        <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900/50 flex items-center justify-center shrink-0 text-teal-600 dark:text-teal-400">
-                            <i data-lucide="bot" class="w-4 h-4"></i>
-                        </div>
-                        <div class="bg-slate-100 dark:bg-slate-800 px-4 py-3 rounded-2xl rounded-tl-none shadow-sm">
-                            <div class="flex gap-1.5 items-center">
-                                <span class="w-2 h-2 bg-slate-400 dark:bg-slate-500 rounded-full animate-bounce" style="animation-delay:0ms"></span>
-                                <span class="w-2 h-2 bg-slate-400 dark:bg-slate-500 rounded-full animate-bounce" style="animation-delay:150ms"></span>
-                                <span class="w-2 h-2 bg-slate-400 dark:bg-slate-500 rounded-full animate-bounce" style="animation-delay:300ms"></span>
-                            </div>
-                        </div>
-                    `;
-                    messagesEl.appendChild(typingRow);
-                    messagesEl.scrollTop = messagesEl.scrollHeight;
                 } else {
-                    // Remove typing indicator
-                    const indicator = document.getElementById('typing-indicator');
-                    if (indicator) indicator.remove();
+                    // Reset to send icon
                     sendBtn.innerHTML = '<i data-lucide="send" class="w-4 h-4"></i>';
                     inputEl.placeholder = "Ask something...";
                     inputEl.focus();
                 }
+                // Re-scan for new icons
                 if (window.lucide) lucide.createIcons();
             };
 
@@ -2716,19 +2495,6 @@
             };
 
             formEl.addEventListener('submit', handleSend);
-
-            // Quick-reply button handlers
-            document.querySelectorAll('.chat-quick-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const query = btn.getAttribute('data-query');
-                    if (!query || isThinking) return;
-                    inputEl.value = query;
-                    handleSend(new Event('submit'));
-                    // Hide quick-reply buttons after use
-                    const quickBtnContainer = btn.parentElement;
-                    if (quickBtnContainer) quickBtnContainer.style.display = 'none';
-                });
-            });
         })();
 
         const setHashSilently = (hash) => {
@@ -2899,8 +2665,38 @@
             });
         });
 
-        // Testimonials carousel (disabled — no testimonials HTML section exists)
-        // Code removed to prevent silent JS errors from missing DOM elements.
+        // Testimonials carousel
+        const tTrack = document.getElementById('t-track');
+        const tDots = document.getElementById('t-dots');
+        const tPrev = document.getElementById('t-prev');
+        const tNext = document.getElementById('t-next');
+        let tIndex = 0; let tInterval = null;
+        if (tTrack) {
+            const tSlides = Array.from(tTrack.children);
+            tDots.innerHTML = '';
+            tSlides.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.className = 't-dot';
+                dot.setAttribute('aria-current', String(i === 0));
+                dot.addEventListener('click', () => setSlide(i));
+                tDots.appendChild(dot);
+            });
+            const setSlide = (i) => {
+                tIndex = (i + tSlides.length) % tSlides.length;
+                tTrack.style.transform = `translateX(-${tIndex * 100}%)`;
+                Array.from(tDots.children).forEach((d, j) => d.setAttribute('aria-current', String(j === tIndex)));
+            };
+            const next = () => setSlide(tIndex + 1);
+            const prev = () => setSlide(tIndex - 1);
+            tNext.addEventListener('click', next);
+            tPrev.addEventListener('click', prev);
+            if (!prefersReducedMotion) {
+                tInterval = setInterval(next, 5000);
+                tTrack.addEventListener('mouseenter', () => clearInterval(tInterval));
+                tTrack.addEventListener('mouseleave', () => tInterval = setInterval(next, 5000));
+            }
+            setSlide(0);
+        }
 
         // Back to top click handler with smooth scroll and bounce enter on show
         if (backToTop) {
@@ -2977,26 +2773,6 @@
                 }
             });
         }
-    </script>
-</body>
-
-</html>ts Parallax ---
-        document.querySelectorAll('.cinematic-card').forEach(card => {
-            const img = card.querySelector('.cinematic-img');
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
-                const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
-                
-                // Pan image slightly opposite to cursor, and do a subtle 3D tilt on the card
-                img.style.transform = `translate(${x * -3}%, ${y * -3}%) scale(1.05)`;
-                card.style.transform = `perspective(1000px) rotateX(${y * -2}deg) rotateY(${x * 2}deg) scale3d(1.01, 1.01, 1.01)`;
-            });
-            card.addEventListener('mouseleave', () => {
-                img.style.transform = `translate(0, 0) scale(1)`;
-                card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)`;
-            });
-        });
     </script>
 </body>
 
