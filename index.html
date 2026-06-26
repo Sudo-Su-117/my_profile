@@ -203,11 +203,11 @@
         }
 
         /* Nav underline indicator */
-        header nav a {
+        nav a {
             position: relative;
         }
 
-        header nav a::after {
+        nav a::after {
             content: "";
             position: absolute;
             left: 0;
@@ -220,8 +220,8 @@
             transition: transform .3s ease;
         }
 
-        header nav a:hover::after,
-        header nav a.text-teal-400::after {
+        nav a:hover::after,
+        nav a.text-teal-400::after {
             transform: scaleX(1);
         }
 
@@ -631,13 +631,25 @@
                 class="font-bold text-xl bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent tracking-tight">Manav
                 Varia</a>
             <div class="flex items-center gap-6">
-                <ul class="hidden md:flex gap-8 font-medium text-slate-600 dark:text-slate-300">
+                <ul class="hidden md:flex gap-6 font-medium text-slate-600 dark:text-slate-300">
                     <li><a href="#about"
                             class="magnetic-btn relative group py-1 hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">About<span
                                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 dark:bg-cyan-400 group-hover:w-full transition-all duration-300"></span></a>
                     </li>
-                    <li><a href="#skills"
-                            class="magnetic-btn relative group py-1 hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Skills<span
+                    <li><a href="#principles"
+                            class="magnetic-btn relative group py-1 hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Principles<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 dark:bg-cyan-400 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#how-i-build"
+                            class="magnetic-btn relative group py-1 hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Workflow<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 dark:bg-cyan-400 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#capabilities"
+                            class="magnetic-btn relative group py-1 hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Capabilities<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 dark:bg-cyan-400 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#journey"
+                            class="magnetic-btn relative group py-1 hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Journey<span
                                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 dark:bg-cyan-400 group-hover:w-full transition-all duration-300"></span></a>
                     </li>
                     <li><a href="#projects"
@@ -674,8 +686,14 @@
         role="navigation" aria-label="Mobile">
         <a href="#about"
             class="block py-3 px-6 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">About</a>
-        <a href="#skills"
-            class="block py-3 px-6 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Skills</a>
+        <a href="#principles"
+            class="block py-3 px-6 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Principles</a>
+        <a href="#how-i-build"
+            class="block py-3 px-6 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Workflow</a>
+        <a href="#capabilities"
+            class="block py-3 px-6 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Capabilities</a>
+        <a href="#journey"
+            class="block py-3 px-6 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Journey</a>
         <a href="#projects"
             class="block py-3 px-6 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Projects</a>
         <a href="#contact"
@@ -2270,7 +2288,7 @@
 
         // Active nav highlighting using Intersection Observer for stability
         const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('header nav a');
+        const navLinks = document.querySelectorAll('nav a');
 
         // Configuration: Define a small window in the middle of the viewport
         const observerOptions = {
