@@ -807,63 +807,85 @@
 
 
         <!-- About Me — Bento Grid -->
+        <!-- About Me Section -->
         <section id="about" class="py-20 bg-transparent scroll-mt-24">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center text-slate-900 dark:text-white mb-4">About Me</h2>
-                <p class="text-center text-slate-500 dark:text-slate-400 mb-12 max-w-xl mx-auto">Developer, automation
-                    nerd, and builder of things that actually work.</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto" id="bento-grid">
-                    <!-- Big intro card (spans 2 cols) -->
-                    <div
-                        class="col-span-2 row-span-2 rounded-2xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200 dark:border-white/10 p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                        <div>
-                            <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
-                                Hey, I'm <strong class="text-slate-900 dark:text-white">Manav</strong> — a full-stack
-                                developer and AI automation specialist based in India.
-                                I love turning messy, manual processes into clean automated systems that actually save
-                                people time and money.
-                            </p>
-                            <p class="text-teal-600 dark:text-teal-400 font-medium">
-                                I bridge the gap between complex AI research and production-grade applications.
-                            </p>
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-2 tracking-tight">Beyond Building Software, I Design Systems</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-full mb-12"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Left: Narrative Text (Spans 2 columns on large screens) -->
+                    <div class="lg:col-span-2 space-y-6 text-slate-700 dark:text-slate-300 leading-relaxed text-sm md:text-base">
+                        <p class="text-lg font-medium text-slate-900 dark:text-white">
+                            I'm an AI Systems Engineer passionate about designing intelligent software systems that solve real-world business problems.
+                        </p>
+                        <p>
+                            What excites me most isn't simply writing code or integrating AI models—it's understanding how an entire system works. I enjoy thinking about how information flows, how services interact, how architectural decisions affect scalability, and how AI can be integrated into software in a way that creates real value rather than just impressive demonstrations.
+                        </p>
+                        <p>
+                            During my industry experience, I worked on enterprise AI initiatives ranging from advanced knowledge management platforms and intelligent retrieval systems to model adaptation and AI-powered business applications. My role went beyond implementation. I enjoyed architecting complete solutions, evaluating engineering trade-offs, and designing systems that balanced technical depth with practical business requirements.
+                        </p>
+                        <p class="font-bold text-slate-900 dark:text-white border-l-2 border-teal-500 pl-4 py-1">
+                            I believe every successful project starts with one question: Why does this system need to exist?
+                        </p>
+                        <p>
+                            Understanding the problem always comes before choosing the technology. Once the objective is clear, I prefer building the simplest working solution, validating it through real usage, and continuously refining every component until the system becomes reliable, maintainable, and scalable.
+                        </p>
+                        <p>
+                            My engineering interests naturally sit at the intersection of AI Engineering, Backend Engineering, and Software Architecture. Whether I'm designing retrieval pipelines, integrating language models, building enterprise knowledge platforms, or developing intelligent backend services, my goal remains the same: create software that solves meaningful problems through thoughtful engineering rather than unnecessary complexity.
+                        </p>
+                        <p>
+                            I learn by building. Every project is an opportunity to understand a system more deeply, challenge my assumptions, and improve my engineering decisions. I don't enjoy treating technology as a black box. I prefer understanding why something works, what trade-offs it introduces, and how it fits into the larger architecture.
+                        </p>
+                        <div class="bg-slate-100 dark:bg-slate-900/60 p-4 rounded-xl border border-slate-200 dark:border-white/5 text-center font-semibold text-slate-800 dark:text-slate-200 text-sm">
+                            To me, engineering isn't measured by the amount of code written. It's measured by the quality of the decisions behind it.
                         </div>
-                        <p class="mt-4 text-sm text-slate-500 dark:text-slate-400">My focus isn't just writing code —
-                            it's building <strong class="text-slate-700 dark:text-slate-200">assets</strong> that
-                            generate revenue and solve real business problems.</p>
                     </div>
 
-                    <!-- Stat card: Projects -->
-                    <div
-                        class="rounded-2xl bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 backdrop-blur-md border border-teal-200/50 dark:border-teal-500/20 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <i data-lucide="code-2" class="w-8 h-8 text-teal-500 mb-2"></i>
-                        <p class="text-3xl font-bold text-slate-900 dark:text-white">15+</p>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-1">Projects
-                            Shipped</p>
-                    </div>
+                    <!-- Right: Quick Facts, Style, and Interests (Bento Stack) -->
+                    <div class="space-y-6">
+                        <!-- Current Focus -->
+                        <div class="p-6 rounded-2xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all duration-300">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-4 flex items-center gap-2">
+                                <i data-lucide="target" class="w-4 h-4"></i> Current Focus
+                            </h3>
+                            <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm font-medium">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span> AI Systems Engineering</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span> Software Architecture</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span> Enterprise Knowledge Platforms</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span> Intelligent Retrieval Systems</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span> Backend Engineering</li>
+                            </ul>
+                        </div>
 
-                    <!-- Stat card: Automation -->
-                    <div
-                        class="rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 backdrop-blur-md border border-purple-200/50 dark:border-purple-500/20 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <i data-lucide="zap" class="w-8 h-8 text-purple-500 mb-2"></i>
-                        <p class="text-3xl font-bold text-slate-900 dark:text-white">60%</p>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-1">Workflow
-                            Reduction</p>
-                    </div>
+                        <!-- Engineering Style -->
+                        <div class="p-6 rounded-2xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all duration-300">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400 mb-4 flex items-center gap-2">
+                                <i data-lucide="activity" class="w-4 h-4"></i> Engineering Style
+                            </h3>
+                            <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm font-medium">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> First-Principles Thinking</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Business-First Problem Solving</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Iterative Engineering</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Systems Thinking</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Architecture-Driven Development</li>
+                            </ul>
+                        </div>
 
-                    <!-- Location card -->
-                    <div
-                        class="rounded-2xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200 dark:border-white/10 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <i data-lucide="map-pin" class="w-8 h-8 text-rose-400 mb-2"></i>
-                        <p class="text-sm font-semibold text-slate-900 dark:text-white">India 🇮🇳</p>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Open to Remote</p>
-                    </div>
-
-                    <!-- Currently learning card -->
-                    <div
-                        class="rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 backdrop-blur-md border border-blue-200/50 dark:border-blue-500/20 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <i data-lucide="brain" class="w-8 h-8 text-blue-500 mb-2"></i>
-                        <p class="text-sm font-semibold text-slate-900 dark:text-white">Currently</p>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Advanced RAG Pipelines</p>
+                        <!-- Core Interests -->
+                        <div class="p-6 rounded-2xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all duration-300">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 mb-4 flex items-center gap-2">
+                                <i data-lucide="heart" class="w-4 h-4"></i> Core Interests
+                            </h3>
+                            <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm font-medium">
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> AI Applications</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Knowledge Management Systems</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Retrieval-Augmented Generation</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Intelligent Search</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Backend Systems</li>
+                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Model Adaptation & Fine-Tuning</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
